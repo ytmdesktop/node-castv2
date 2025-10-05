@@ -1,7 +1,3 @@
-var Client = require('./lib/client');
-var Server = require('./lib/server');
-var DeviceAuthMessage = require('./lib/proto').DeviceAuthMessage;
-
-module.exports.Client = Client;
-module.exports.Server = Server;
-module.exports.DeviceAuthMessage = DeviceAuthMessage;
+export { default as Client } from './lib/client.js';
+export { default as Server } from './lib/server.js';
+export { DeviceAuthMessage } from "./lib/cast_channel_pb.js";
